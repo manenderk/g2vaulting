@@ -1,0 +1,37 @@
+.home-banner {
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #333;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+#header-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+}
+
+#header-main .navbar {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0.75rem 1.5rem rgb(18 38 63 / 3%);
+}
+
+#header-main .navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.sub-banner {
+  height: 60vh;
+}
+

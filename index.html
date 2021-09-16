@@ -14,17 +14,19 @@
   <link type="text/css" href="assets/libs/swiper/dist/css/swiper.min.css" rel="stylesheet">
   <!-- Purpose CSS -->
   <link rel="stylesheet" href="assets/css/purpose.css" id="stylesheet">
+  <link rel="stylesheet" href="assets/css/custom.css" id="stylesheet">
 </head>
 
 <body>
-  <header class="header header-transparent" id="header-main">
+  <header class="header" id="header-main">
     <!-- Main navbar -->
-    <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-dark bg-dark" id="navbar-main">
+    
+    <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light" id="navbar-main">
       <div class="container px-lg-0">
         <!-- Logo -->
         <a class="navbar-brand mr-lg-5" href="/">
-          <!-- <img alt="Image placeholder" src="assets/img/brand/white.png" id="navbar-logo" style="height: 50px;"> -->
-          G2 Vaulting
+          <img alt="Logo placeholder" src="assets/img/brand/g2vaulting-logo.png" id="navbar-logo" style="height: 50px;">
+          
         </a>
         <!-- Navbar collapse trigger -->
         <button class="navbar-toggler pr-0" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +36,16 @@
         <div class="collapse navbar-collapse" id="navbar-main-collapse">
           <ul class="navbar-nav align-items-lg-center ml-lg-auto">
             <li class="nav-item d-lg-none d-xl-block">
-              <a class="nav-link" href="#contact-us">Contact Us</a>
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item d-lg-none d-xl-block">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item d-lg-none d-xl-block">
+              <a class="nav-link" href="/services.html">Our Services</a>
+            </li>
+            <li class="nav-item d-lg-none d-xl-block">
+              <a class="nav-link" href="/contact.html">Contact Us</a>
             </li>
             
             
@@ -46,16 +57,16 @@
   
   <div class="main-content">
     <!-- Header (v13) -->
-    <section class="slice slice-xl bg-cover bg-size--cover pb-300" data-offset-top="#header-main" style="background-image: url('assets/img/backgrounds/background-1.jpg');">
-      <span class="mask bg-dark opacity-8"></span>
-      <div class="container pt-7">
+    <section class="slice bg-cover bg-size--cover home-banner d-flex align-items-center justify-content-center" data-offset-top="#header-main" style="background-image: url('assets/img/backgrounds/background-1.jpg');">
+      <span class="mask bg-dark opacity-7"></span>
+      <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="text-center">
               <h2 class="display-4 text-white mb-2">Inspiring Genius to Drive Innovation & Empower Businesses Globally</h2>
               <div class="row justify-content-center">
-                <div class="col-lg-6">
-                  <p class="lead text-white lh-180">We engage unparalleled efficiency and collaboration to optimize business processes with our data-driven approach, an eye for finer details,& competence and deliver exceptional user experiences.</p>
+                <div class="col-lg-8">
+                  <p class="text-white lead text-lg lh-180">We engage unparalleled efficiency and collaboration to optimize business processes with our data-driven approach, an eye for finer details, & competence and deliver exceptional user experiences.</p>
                   
                 </div>
               </div>
@@ -65,36 +76,49 @@
       </div>
     </section>
     <!-- Features (v35) -->
-    <section class="slice slice-lg pt-lg-0">
+    
+
+    <section class="slice slice-lg" id="sct-what-we-do">
       <div class="container">
-        <div class="card-group flex-column flex-lg-row">
-          <div class="card bg-gradient-primary border-0 px-4 py-5 mt--150">
+        <div class="row row-grid">
+          <div class="col-lg-4 card hover-shadow-lg hover-scale-110">
             <div class="card-body">
-              <h5 class="h4 text-white">Consulting Services</h5>
-              <p class="mt-4 mb-0 text-white">
-                We offers bespoke consulting services that are tailored to your business and IT needs and are strategically beneficial for your enterprise.
-              </p>
+              <div class="pb-5">
+                <div class="icon bg-gradient-primary text-white rounded-circle icon-lg icon-shape shadow">
+                  <i class="fas fa-comments"></i>
+                </div>
+              </div>
+              <h5 class="font-weight-bold">Consulting Services</h5>
+              <p class="mt-2 mb-0 text-dark">We offers bespoke consulting services that are tailored to your business and IT needs and are strategically beneficial for your enterprise.</p>
             </div>
           </div>
-          <div class="card bg-gradient-dark border-0 px-4 py-5 mt--150">
+          <div class="col-lg-4 card hover-shadow-lg hover-scale-110">
             <div class="card-body">
-              <h5 class="h4 text-white">Security</h5>
-              <p class="mt-4 mb-0 text-white">
-                With advanced business processes and built in innovative solutions, we can help transform the way your employees work. 
-              </p>
+              <div class="pb-5">
+                <div class="icon bg-gradient-warning text-white rounded-circle icon-lg icon-shape shadow">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+              </div>
+              <h5 class="font-weight-bold">Security</h5>
+              <p class="mt-2 mb-0 text-dark">With advanced business processes and built in innovative solutions, we can help transform the way your employees work. </p>
             </div>
           </div>
-          <div class="card bg-gradient-primary border-0 px-4 py-5 mt--150">
+          <div class="col-lg-4 card hover-shadow-lg hover-scale-110">
             <div class="card-body">
-              <h5 class="h4 text-white">Digital Business</h5>
-              <p class="mt-4 mb-0 text-white">
-                All base UI elements are made using Nested Symbols and shared styles that are logically connected with one another.
-              </p>
+              <div class="pb-5">
+                <div class="icon bg-gradient-danger text-white rounded-circle icon-lg icon-shape shadow">
+                  <i class="fas fa-cogs"></i>
+                </div>
+              </div>
+              <h5 class="font-weight-bold">Managed Services</h5>
+              <p class="mt-2 mb-0 text-dark">We helps enterprises meet strategic business imperatives by providing continuous improvement, transformation, and innovation to support an increasingly complex set of IT and business.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+
     <!-- Milestone (v1) -->
     <section class="slice slice-lg">
       <div class="container">
@@ -104,7 +128,7 @@
           </span>
           <h3 class=" mt-4">Just a few numbers</h3>
           <div class="fluid-paragraph mt-3">
-            <p class="lead lh-180">We helps enterprises meet strategic business imperatives by providing continuous improvement, transformation, and innovation.</p>
+            <p class="lead text-dark lh-180">We helps enterprises meet strategic business imperatives by providing continuous improvement, transformation, and innovation.</p>
           </div>
         </div>
         <!-- Milestones -->
@@ -168,7 +192,7 @@
         <div class="row row-grid">
           <div class="col-lg-3">
             <h4 class="mt-3">When Can We Help</h4>
-            <p class="lead mt-4">We can develop the implementation process from any stage and assist in resolving the challenges faced by your firm, illuminating the path of transformation. </p>
+            <p class="lead text-dark mt-4">We can develop the implementation process from any stage and assist in resolving the challenges faced by your firm, illuminating the path of transformation. </p>
             <a href="#contact-us" class="btn btn-primary btn-icon rounded-pill hover-scale-110 mt-4">
               <span class="btn-inner--icon">
                 <i class="fas fa-angle-right"></i>
@@ -183,10 +207,10 @@
           </div>
           <div class="col-lg-3 d-lg-flex flex-lg-column">
             <div class="mt-lg-auto">
-              <p class="lead">Advance to next-level user experience, simplify your workflows and generate enough actionable and intuitive data with our expertise to see an evident rise in business numbers. </p>
+              <p class="lead text-dark">Advance to next-level user experience, simplify your workflows and generate enough actionable and intuitive data with our expertise to see an evident rise in business numbers. </p>
             </div>
             <div class="mt-lg-auto">
-              <p class="lead mb-0">With a highly competitive pricing structure and budget-friendly technology packages, we offers premium quality services at only 40% of the cost offered by top players in the market. Get in touch with us for a quote today.</p>
+              <p class="lead text-dark mb-0">With a highly competitive pricing structure and budget-friendly technology packages, we offers premium quality services at only 40% of the cost offered by top players in the market. Get in touch with us for a quote today.</p>
             </div>
           </div>
         </div>
@@ -203,7 +227,7 @@
           <div class="col-lg-5 ml-lg-auto">
             <div class="text-center text-lg-left">
               <h2 class="h1 text-white mb-3">Your next big idea can now be a reality</h2>
-              <p class="lead text-muted lh-180">We are an unbeatable IT Solutions company delivering Managed IT Services. We believe, especially today, that technology can and should drive your business. We provide organizations with Proactive IT Services that prevent downtime and time-consuming network problems before they happen.</p>
+              <p class="lead text-white lh-180">We are an unbeatable IT Solutions company delivering Managed IT Services. We believe, especially today, that technology can and should drive your business. We provide organizations with Proactive IT Services that prevent downtime and time-consuming network problems before they happen.</p>
               <a href="#contact-us" class="btn btn-primary rounded-pill mt-4">Connect Now</a>
             </div>
           </div>
@@ -216,28 +240,32 @@
         <div class="row row-grid align-items-center">
           <div class="col-lg-6">
             <h3>Contact us</h3>
-            <p class="lead">If there's something we can help you with, jut let us know. We'll be more than happy to offer you our help</p>
-            <form class="mt-5" id="contact-us-form">
+            <p class="lead text-dark">If there's something we can help you with, jut let us know. We'll be more than happy to offer you our help</p>
+            <form class="mt-5" id="contact-us-form" target="_blank" action="https://formsubmit.co/manender369@gmail.com" method="POST">
               <div class="form-group">
                 <label class="sr-only">Your name</label>
-                <input class="form-control form-control-lg" placeholder="Your name" type="text" required>
+                <input class="form-control form-control-lg" placeholder="Your name" type="text" name="Name" required>
               </div>
               <div class="form-group">
                 <label class="sr-only">Email address</label>
-                <input class="form-control form-control-lg" placeholder="Email address" type="email" required>
+                <input class="form-control form-control-lg" placeholder="Email address" type="email" name="Email" required>
               </div>
               <div class="form-group">
                 <label class="sr-only">Type your message</label>
-                <textarea class="form-control form-control-lg textarea-autosize" rows="5" placeholder="Type your message"></textarea>
+                <textarea class="form-control form-control-lg textarea-autosize" rows="5" placeholder="Type your message" name="Message" required></textarea>
               </div>
               <button type="submit" class="btn btn-dark rounded-pill mt-4">Send message</button>
-              <p id="contact-success-message" class="lead mt-2">Thank you. We will get back to you soon.</p>
+              <span class="d-block mt-4 text-sm">We'll get back to you in 24-48 h.</span>
             </form>
 
           </div>
           <div class="col-lg-5 ml-lg-auto">
             <h3>G2 Vaulting Solutions Ltd<br>13477 69 Ave, Surrey, British Columbia, Canada, V3W8H1</h3>
-            <p class="lead my-4">E: <a href="#">info@g2vaulting.com</a><br>T: 7786887456</p>
+            <p class="lead my-4">
+              E: <a href="mailto:info@g2vaulting.com">info@g2vaulting.com</a>
+              <br>
+              T: <a href="tel:8008769059">800-876-9059</a>
+            </p>
           </div>
         </div>
       </div>
