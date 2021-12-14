@@ -35,3 +35,18 @@ html {
   height: 60vh;
 }
 
+.address-card {
+  height: calc(100% - 30px);
+}
+
+.address-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+hr {
+  border-top: 1px solid #8492A6;
+  width: 80%;
+}
