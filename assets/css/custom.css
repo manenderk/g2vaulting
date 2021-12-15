@@ -23,12 +23,12 @@ html {
 #header-main .navbar {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #fff;
   box-shadow: 0 0.75rem 1.5rem rgb(18 38 63 / 3%);
 }
 
 #header-main .navbar-light .navbar-nav .nav-link {
-  color: #fff;
+  color: #000;
 }
 
 .sub-banner {
@@ -49,4 +49,10 @@ html {
 hr {
   border-top: 1px solid #8492A6;
   width: 80%;
+}
+
+@media (max-width: 992px) {
+  #header-main .navbar {
+    height: auto;
+  }
 }
